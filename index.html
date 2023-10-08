@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOSCA</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header">
+        
+        <div>
+            <img class="iconos__svg menu" src="img/hamburguer.svg" alt="Menu">
+            <img class="iconos__svg logo"  src="img/logo.svg" alt="logo">
+
+        </div>
+
+            
+            <nav class="navigation">
+              <a class="navigation___text" href="#">Mask</a>
+              <a class="navigation___text" href="#">Protectores</a>
+              <a class="navigation___text" href="#">Botellas</a>
+              <a class="navigation___text" href="#">Accesorios</a>
+            </nav>
+
+            <nav class="iconos">
+                <img class="iconos__svg search" src="img/search.svg" alt="Search">
+                <img class="iconos__svg user" src="img/user.svg" alt="User">
+                <img class="iconos__svg bag" src="img/bag.svg" alt="Shop">
+            </nav>
+
+    </header>
+
+    <section class="container_body">
+        
+        <div class="Text">
+
+            <div class="Text__Tittle">
+                <h1>BOTELLA CLOSCA</h1>
+                <h2>Beach</h2>
+                <h3>S/99.99</h3>
+            </div>
+
+            <div class="Paragraph">
+                <p class="Paragraph__First">En 20 años, existirán mas botellas que peces en nuestro oscéanos.</p>
+                <p class="Paragraph__Second">La contaminación plástica daña a más de 100.000 animales marinos cada año. Una botella de plástico tarda alrededor de 450 años en descomponerse</p>
+                <p>Comprar ahora</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="iconos__svg arrowrigh">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                  </svg>
+                  
+            </div>
+            
+            
+            
+        </div>
+
+        <div>
+            <img src="img/bottle_w_beach.png" alt="Bottle">
+        </div>
+
+        <div class="flechas">
+            <p class="page">1/4</p>
+
+            <div class="arrow">
+                <svg class="arrow__svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+        
+                <svg class="arrow__svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <footer class="footer">
+        
+    </footer>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

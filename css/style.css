@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2c2d2a;
+    --secondary: #e7dfcf;
+  
+    --primaryFont: 'Montserrat', sans-serif;
+    --secondaryFont: 'EB Garamond', serif;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary);
+  }
+  
+  body {
+    background-color: var(--secondary);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .container_body {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    position: relative;
+    
+    
+    
+  }
+
+  .navigation___text{
+    font-family: var(--primaryFont);;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 0 .5rem 0 .5rem;
+
+  }
+
+.iconos {
+    align-content: right;
+    margin: 0;
+}
+
+.iconos__svg {
+    width: 20px;
+    height: 20px;
+}
+
+.logo{
+    width: 100px;
+}
+
+
+
+.Text__Tittle {
+    line-height: 1rem;
+}
+
+h1 {
+    font-family: var(--primaryFont);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+h2 {
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 9rem;
+}
+
+h3 {
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+
+
+.Paragraph__First {
+    font-family: var(--secondaryFont);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.Paragraph__Second {
+    font-family: var(--primaryFont);
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: bottom;
+    
+}
+
+img {
+    height: 65rem;
+
+}
+
+.page {
+    text-align: right;
+}
+
+.arrow {
+    justify-content: bottom;
+}
+
+.arrow__svg {
+    width: 50px;
+    height: 50px;
+}
+
+.footer {
+    text-align: right;
+}
+
+.Text {
+    margin-top: 3rem;
+}
+
+.Paragraph {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
+
+.flechas {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
